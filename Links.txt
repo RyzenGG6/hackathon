@@ -3,5 +3,4 @@ https://www.figma.com/file/lYZauLHIHTrck6RsMD5QJr/Untitled?type=design&node-id=1
 
 Splash screen:
 https://preview.webflow.com/preview/task-management-app-31009d?utm_medium=preview_link&utm_source=designer&utm_content=task-management-app-31009d&preview=e36692f4fd95cf8460b8e385555ccd90&workflow=preview
-
 Thank you
