@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .background {
+    background: linear-gradient(45deg, #4c2e8a, #ffcc00);
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background::before {
+    content: "";
+    background-image: url(https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png);
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  /* Register form styles */
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .title-animation {
+    animation: title-fadein 2s ease-in-out 0s;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .title-animation span {
+    display: inline-block;
+    animation: word-fadein 2s ease-in-out forwards;
+    opacity: 0;
+    padding: 0 0.5rem;
+  }
+  
+  .title-animation span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .title-animation span:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  .title-animation span:nth-child(3) {
+    animation-delay: 2s;
+  }
+  
+  .title-animation span:nth-child(4) {
+    animation-delay: 3s;
+  }
+  
+  .title-animation span:nth-child(5) {
+    animation-delay: 4s;
+  }
+  
+  @keyframes title-fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes word-fadein {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  
+  .register-box {
+    animation: slide-up 0.5s ease-in-out;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    width: 400px;
+  }
+  
+  .register-box h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input {
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+  
+  .btn {
+    background-color: #3f51b5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s;
+    width: 100%;
+  }
+  
+  .btn:hover {
+    background-color: #1a237e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-link {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .login-link a {
+    color: #3f51b5;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* JavaScript animations */
+  .btn:hover {
+    background-color: #1a237e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title-animation span {
+    display: inline-block;
+    opacity: 0;
+  }
+  
+  @keyframes word-fadein {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  
+  .title-animation span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .title-animation span:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .title-animation span:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  .title-animation span:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+  
+  .title-animation span:nth-child(5) {
+    animation-delay: 2s;
+  }
+  
+  .title-animation span {
+    animation: word-fadein 2s ease-in-out forwards;
+  }
+  
+  .background {
+    background: linear-gradient(45deg, #4c2e8a, #ffcc00);
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: gradient-animation 5s ease-in-out infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background: linear-gradient(45deg, #4c2e8a, #ffcc00);
+    }
+    50% {
+      background: linear-gradient(45deg, #ffcc00, #4c2e8a);
+    }
+    100% {
+      background: linear-gradient(45deg, #4c2e8a, #ffcc00);
+    }
+  }
